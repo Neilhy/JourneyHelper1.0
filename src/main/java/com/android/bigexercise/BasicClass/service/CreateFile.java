@@ -128,8 +128,6 @@ public class CreateFile {
     }
 
     public static String getPhotoUrlfromId(Long photoId) {
-
-
         return requestMappingUrl.SERVERURL+requestMappingUrl.JOURNEYHELPERPHOTO+"/"+photoId+".journeypic";
 //        return requestMappingUrl.LOCALURL+requestMappingUrl.JOURNEYHELPERPHOTO+"/"+photoId+".journeypic";
     }
