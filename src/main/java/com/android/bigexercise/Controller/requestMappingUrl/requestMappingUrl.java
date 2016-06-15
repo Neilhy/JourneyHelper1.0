@@ -4,8 +4,10 @@ package com.android.bigexercise.Controller.requestMappingUrl;
  * Created by NeilHY on 2016/5/28.
  */
 public class requestMappingUrl {
-    public static final String SERVERURL = "119.29.192.45:8080";
-    public static final String LOCALURL = "localhost:8080";
+//    public static final String SERVERURL = "http://119.29.192.45:8080";
+    public static final String SERVERURL = "http://119.29.240.31:8080";
+    public static final String LOCALURL = "http://localhost:8080";
+    public static final String TempURL = "http://192.168.1.106:8080";
 
     public static final String ADDPHOTOURL = "/addPhoto";
     public static final String CREATEJOURNEYURL = "/createJourney";
