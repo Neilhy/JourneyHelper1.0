@@ -130,5 +130,11 @@ public class CreateFile {
     public static String getPhotoUrlfromId(Long photoId) {
         return requestMappingUrl.SERVERURL+requestMappingUrl.JOURNEYHELPERPHOTO+"/"+photoId+".journeypic";
 //        return requestMappingUrl.LOCALURL+requestMappingUrl.JOURNEYHELPERPHOTO+"/"+photoId+".journeypic";
+//        return requestMappingUrl.TempURL+requestMappingUrl.JOURNEYHELPERPHOTO+"/"+photoId+".journeypic";
+    }
+
+    public static String getPhotoUrlfromString(String iconStr) {
+        return requestMappingUrl.SERVERURL + requestMappingUrl.JOURNEYHELPERPHOTO+"/"+iconStr;
+//        return requestMappingUrl.TempURL + requestMappingUrl.JOURNEYHELPERPHOTO+"/"+iconStr;
     }
 }

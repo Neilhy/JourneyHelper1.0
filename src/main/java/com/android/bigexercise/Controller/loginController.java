@@ -1,6 +1,7 @@
 package com.android.bigexercise.Controller;
 
 import com.android.bigexercise.BasicClass.model.user;
+import com.android.bigexercise.BasicClass.service.CreateFile;
 import com.android.bigexercise.BasicClass.service.UserService;
 import com.android.bigexercise.Request.LoginRequest;
 import com.android.bigexercise.Response.LoginResponse;
@@ -66,7 +67,7 @@ public class loginController {
             loginResponse.setUserName(user.getUserName());
             if (user.getIcon() != null) {
 
-                loginResponse.setIcon(user.getIcon());
+                loginResponse.setIcon(CreateFile.getPhotoUrlfromString(user.getIcon()));
             }
             loginResponse.setEmailAddr(user.getEmailAddr());
             loginResponse.setStatus(respConstant.RESPONSE_SUCCESS_STATUS);
